@@ -1,0 +1,34 @@
+<! DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<meta name="viewport" content="ancho=ancho del dispositivo, escala inicial = 1.0">
+</head>
+<cuerpo>
+<div class = "maincontainer">
+<div class = "monkeylogin">
+	<div class="animcon"id="animcon">
+		<img id="imgcito"/>
+	</div>
+	<div class="formcon">
+	
+		<input type="email" id="user" class="tb" placeholder="Usuario" autocomplete="off" />
+		<br/>
+		<br/>
+		<input type="password" id="pass" class="tb" placeholder="Password" autocomplete="off"/>
+		<br/>
+		<br/>
+		<button type="submit" onclick="login.enviarCtrl()" class="sbutton" value="LOGIN">Enviar</button>
+		<button type="submit" onclick="login.registro()" class="sbutton">Registro</button>
+
+	
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="javascript.js"> </script>
+<script type="text/javascript"  src="controllers/loginCtrl.js"> </script>
+<script type="text/javascript" src="services/loginService.js"> </script>
+<script src="json.js"></script>
+</body>
+</html>

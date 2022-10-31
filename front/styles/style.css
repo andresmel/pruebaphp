@@ -1,0 +1,292 @@
+body
+{
+font-family: Arial, Helvetica, sans-serif;
+overflow:hidden;
+background: #353535;
+}
+.maincontainer
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.monkeylogin
+{
+	width: 350px;
+	height: 500px;
+	box-shadow: 0 12px 25px #272727;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #555555;
+	border-radius: 40px;
+}
+.animcon
+{
+	background-color: black;
+
+	overflow: hidden;
+	/*overflow hidden because to keep the hand image hidden below*/
+	margin-top:20px;
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
+	background-image:url(https://drive.google.com/file/d/15_4ljmLjb2dZuf02eZQloMJtopgkg__g/view?usp=sharing);
+	background-size: 90% 85%;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+
+	/*flex center to keep the hand image in the center*/
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.animcon img
+{
+	margin-top:0%;
+	height: 170px;
+	width: 170px;
+	transition: 1s;
+}
+
+.formcon
+{
+	margin-top: 38px;
+}
+input
+{
+	height: 40px;
+	width: 300px;
+	/*background-color: #254E58;*/
+	border-radius: 20px;
+	border:none;
+	color: #5a5449;
+	text-indent: 15px;
+	font-size: 100%;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0);
+	outline: none;
+}
+
+.sbutton
+{
+	text-indent: 0px;
+	height: 40px;
+	width: 300px;
+	margin-top: 10px;
+	background-color: #1ca4ff;
+	transition: "2s";
+	border: none;
+	color: white;
+	font-weight: bolder;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+	outline: none;
+    border-radius: 5px;
+    font-size:16px;
+}
+.sbutton:hover
+{
+	color: gray;
+	cursor: pointer;
+}
+
+.foot
+{
+	color: #5a5449;
+	font-weight: lighter;
+	margin-top: 40px;
+}
+.tb{
+    background: #353535!important;
+    color:white;
+    border-radius: 5px !important;
+}
+input::placeholder{
+    color:gray;
+}
+
+.contenedorProd{
+	position: relative;
+	width: 80%;
+	left: 10%;
+	top:100px;
+	height: auto;
+	box-shadow: 0 0 12px 2px lightgray;
+
+
+}
+.header{
+	position: absolute;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 70px;
+	background: #151515;
+	color: white;
+	text-align: center;
+	box-shadow: 0 0 12px 1px gray;
+}
+
+.contenedorProd .table{
+	position: relative;
+	margin-left: 0%;
+	margin-top: 20px;
+	width: 100%;
+	background-color: black;
+	text-align: center;
+	font-size: 17px;
+	color: white;
+}
+
+.contenedorProd .table th{
+	background-color: black;
+	height: 40px;
+	color: white;
+}
+.contenedorProd .table td{
+	height: 40px;
+	border:1px solid #757575;
+	background: #555555;
+}
+
+.form{
+	position: relative;
+	margin-top: 200px !important;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	padding: 10px;
+	height: 300px;
+	background-color: #454545;
+	margin-top: 120px !important;
+	border-radius: 5px;;
+	box-shadow: 0 0 12px 2px gray;
+
+}
+.form input{
+	border:1px solid gray;
+	margin-top: 10px;
+	border-radius: 5px;
+	margin-left: 7px;
+	background: #353535;
+}
+.form .header{
+	position: absolute;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	border-radius:  5px 5px 0 0;;
+}
+.form .div-form{
+	position: absolute;
+	top:80px;
+	left: 0%;
+}
+
+.form .buton-env{
+	width: 96%;
+	border:none;
+	background: dodgerblue;
+	color:white;
+	height: 40px;
+	margin-left: 7px;
+	margin-top: 20px;
+
+}
+
+.form .select-in{
+	width: 96%;
+	height: 40px;
+	color:white !important;
+	margin-top:10px;
+	margin-left: 6px;;
+	border:1px solid gray !important;
+	color:gray !important;
+	background: #353535;
+	font-size: 16px;
+	padding-left: 18px;;
+}
+
+.modaleEdit .select-in option{
+	color:white !important;
+}
+
+
+.modaleEdit .div-form{
+	position: absolute;
+	top: 200px !important;
+	left: 40%;
+	right: 40%;
+	width: 20% !important;
+	padding: 10px;
+	height: 300px;
+	background-color: #454545;
+	margin-top: 120px !important;
+	border-radius: 5px;;
+	box-shadow: 0 0 12px 2px gray;
+}
+.modaleEdit  .div-form input{
+	border:1px solid gray;
+	margin-top: 10px;
+	border-radius: 5px;
+	margin-left: 7px;
+	width: 95%;;
+	background: #353535;
+}
+.modaleEdit .div-form .header{
+	position: absolute;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	border-radius:  5px 5px 0 0;;
+}
+.modaleEdit .div-form .div-form{
+	position: absolute;
+	top:80px;
+	left: 0%;
+}
+
+.modaleEdit .div-form .buton-env{
+	width: 96%;
+	border:none;
+	background: dodgerblue;
+	color:white;
+	height: 40px;
+	margin-left: 7px;
+	margin-top: 20px;
+
+}
+
+.modaleEdit .div-form .select-in{
+	width: 96%;
+	height: 40px;
+	color:white !important;
+	margin-top:10px;
+	margin-left: 6px;;
+	border:1px solid gray !important;
+	color:gray !important;
+	background: #353535;
+	font-size: 16px;
+	padding-left: 18px;;
+}
+
+.modaleEdit .div-form .select-in option{
+	color:white !important;
+}
+
+body .modaleEdit{
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.7);
+	display: none;
+}

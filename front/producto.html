@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Productos</h1>
+    </div>
+    <div class="form">
+        <div class="header">
+            <h3>Agregar Producto</h3>
+        </div>
+        <div class="div-form"> 
+          <input type="text" id="prod" placeholder=" Nombre del producto"/><br>
+          <select class="select-in" id="tipo">
+            <option selected disabled label="Seleccionar tipo del producto"></option>
+              <option value="1">aliementos</option>
+              <option value="2">aseo</option>
+              <option value="3">tecnologia</option>
+          </select>
+          <input type="file" id="file" name="archivo" placeholder="imagen" /><br>
+          <button class="buton-env" onclick="pr.enviar()">Enviar</button>
+        </div>
+    </div>
+    <div class="contenedorProd">
+        <table class="table" id="tabla">
+            <thead>
+                <th>ID</th>
+                <th>producto</th>
+                <th>Tipo Producto</th>
+                <th>Fecha In</th>
+                <th>Imagen</th>
+            </thead>
+            <tbody id="tablaBd">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modaleEdit">
+        <div class="div-form"> 
+          
+            <input type="text" id="prodAct" placeholder=" producto"/><br>
+            <select class="select-in" id="tipoAct">
+                <option value="1">aliementos</option>
+                <option value="2">aseo</option>
+                <option value="3">tecnologia</option>
+            </select>
+            <input type="file" id="fileAct" name="archivo" placeholder="imagen" /><br>
+            <button class="buton-env" onclick="pr.act()">Actualizar</button>
+            <button class="buton-env" onclick="pr.cancel()">Cancelar</button>
+            <input type="text" id="idAct" placeholder=" producto" style="visibility:hidden ;"/><br>
+          </div>
+
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="controllers/productoCtrl.js"></script>
+<script type="text/javascript" src="services/productoService.js"></script>
+<script type="text/javascript" src="json.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
